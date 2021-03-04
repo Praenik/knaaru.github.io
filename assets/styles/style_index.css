@@ -1,0 +1,107 @@
+:root{
+    --dark: #282828;
+    --light: #fffcfc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+@media (max-width: 767px){
+    .knaaru{
+        font-size: calc(12px + (38 + 38 * 0.7) * ((100vw - 320px) / 1920));
+        font-weight: 700;
+    }
+
+    .nav_link{
+        font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    }
+}
+
+.container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header{
+    display: block;
+    position: relative;
+    background-color: var(--dark);
+    background-size: cover;
+    width: 100%;
+    height: 10vh;
+    color: var(--light);
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: 700;
+    justify-content: space-between;
+    padding-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav_link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light);
+    font-size: calc(16px + 8 * (100vw / 1920));
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.intro{
+    display: block;
+    background-color: var(--dark);
+    background-size: cover;
+    color: var(--light);
+    width: 100%;
+    height: 90vh;
+}
+
+.intro_inner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_edge{
+    width: 25%;
+}
+
+.intro_center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 80vh;    
+}
+
+.knaaru{
+    font-size: calc(12px + 38 * (100vw / 1920));
+    font-weight: 700;
+}
+
+.logo{
+    width: 70%;
+}
