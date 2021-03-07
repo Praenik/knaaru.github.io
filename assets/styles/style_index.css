@@ -8,36 +8,38 @@
     padding: 0;
 }
 
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
 }
 
-@media (max-width: 767px){
-    .knaaru{
-        font-size: calc(12px + (38 + 38 * 0.7) * ((100vw - 320px) / 1920));
-        font-weight: 700;
-    }
-
-    .nav_link{
-        font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
-    }
-}
-
 .container{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+/* --- HEADER --- */
 
 .header{
     display: block;
-    position: relative;
+    position: sticky;
+    top: 0;
     background-color: var(--dark);
     background-size: cover;
     width: 100%;
     height: 10vh;
     color: var(--light);
+    padding-bottom: 10px;
 }
 
 .nav{
@@ -50,17 +52,18 @@ body{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .nav_link{
     text-decoration: none;
     text-transform: uppercase;
     color: var(--light);
-    font-size: calc(16px + 8 * (100vw / 1920));
+    font-size: 24px;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+/* --- INTRO --- */
 
 .intro{
     display: block;
@@ -98,10 +101,193 @@ body{
 }
 
 .knaaru{
-    font-size: calc(12px + 38 * (100vw / 1920));
+    font-size: 60px;
     font-weight: 700;
 }
 
 .logo{
     width: 70%;
+}
+
+/* --- INFO --- */
+
+.info{
+    display: block;
+    background-color: var(--light);
+    color: var(--dark);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.info_durka{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.title{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subtitle{
+    padding-bottom: 50px;
+}
+
+/* --- NEWS --- */
+
+.news{
+    background-color: var(--dark);
+    color: var(--light);
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+}
+
+.news_durka{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.news_block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news_item{
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    height: 220px;
+    background-color: var(--light);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: var(--dark);
+
+    transition: all 0.5s ease;
+}
+
+.news_item:hover{
+    transform: translate(-10px, -10px);
+
+}
+
+.news_title{
+    padding-left: 20px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.news_subtitle{
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+/* --- ACHIEVEMENTS --- */
+
+.achievements{
+    display: block;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.ach_durka{
+    display: flex;
+    flex-direction: column;
+}
+
+.ach_block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ach_item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.ach_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    transition: all 0.5s ease;
+}
+
+.ach_img:hover{
+    transform: scale(1.1);
+}
+
+.ach_text{
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+/* --- TIMETABLE --- */
+
+.timetable{
+    display: block;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.timetable_durka{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timetable_block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+}
+
+.timetable_item{
+    text-align: center;
+}
+
+.title_static{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.subtitle_static{
+    font-size: 22px;
+    padding-bottom: 3px;
+}
+
+.swords_block{
+    width: 10%;
+}
+
+.swords{
+    width: 100%;
+    height: 100%;
 }
