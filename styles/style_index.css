@@ -1,0 +1,169 @@
+:root{
+    --dark: #282828;
+    --light: #fffcfc;
+    --gray: #a0a0a0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .col{
+    border: 2px red solid;
+} */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.3vw;
+}
+
+@media (max-width: 765px){
+    body{
+        font-size: 5vw;
+    }
+}
+
+.bg-dark {
+    background-color: var(--dark)!important;
+}
+
+.dark-theme{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.light-theme{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/*--- NAVBAR---*/
+
+.navbar-dark .navbar-nav .nav-link{
+    color: var(--light);
+    text-transform: uppercase;
+}
+
+.navbar-nav{
+    display: flex;
+    font-weight: 700;
+}
+
+.right{
+    right: 0;
+    margin-right: 0px!important;
+}
+
+.nav-item{
+    margin-right: 20px;
+}
+
+.nav-link{
+    font-size: 0.5em;
+}
+
+/*--- TITLE---*/
+
+.title{
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle{
+    margin-bottom: 80px;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+/*--- CAROUSEL---*/
+
+.carousel{
+    height: 92.9vh;
+    width: 100%;
+}
+
+.carousel-inner{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*--- NEWS---*/
+
+.news{
+    padding-bottom: 60px;
+}
+
+.news-titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-main-title{
+    text-align: left;
+}
+
+.news-main-title.more{
+    color: var(--gray);
+    font-size: 0.7em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.news-link{
+    text-decoration: none;
+}
+
+.news-block{
+    background-color: var(--dark);
+    color: var(--light);
+
+    width: 300px;
+    height: 220px;
+
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+
+.news-block:hover{
+    transform: translate(-10px, -10px);
+}
+
+.news-title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.news-subtitle{
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.5em;
+}
