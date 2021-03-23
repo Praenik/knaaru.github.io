@@ -2,7 +2,7 @@
 ## Верстка cайта гильдии
 ![GitHub last commit](https://img.shields.io/github/last-commit/Prae-photo/knaaru.github.io) ![GitHub Repo stars](https://img.shields.io/github/stars/Prae-photo/knaaru.github.io?style=social)
 
-Проект посвящен делался для гильдии в компьютерной игре World of Warcraft в образовательных целях, для изучения HTML5, CSS, JS и фреймворка Bootstrap 5
+Проект делался для гильдии в компьютерной игре World of Warcraft в образовательных целях, для изучения HTML5, CSS, JS и фреймворка Bootstrap 5
 
 ## Используемые библиотеки:
 - [JQuery](https://jquery.com/) - JS фреймворк
