@@ -150,6 +150,16 @@ a{
     margin-bottom: 20px;
 }
 
+.news_header_link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.news_header_link:hover{
+    color: inherit;
+    text-decoration: underline;
+}
+
 .news_content ul,
 .news_content ol{
     padding: 20px;
