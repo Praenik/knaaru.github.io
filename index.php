@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="vendor/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
     <link rel="stylesheet" href="vendor/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
     <link rel="stylesheet" href="vendor/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
@@ -24,40 +24,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 left">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="news.html">Новости</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Рейды</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Гайды</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Устав</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 right">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Профиль</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Выйти</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php require_once 'templates/nav.php'?>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -127,7 +94,7 @@
         <div class="col"></div>
         <div class="col-6">
           <h1 class="title">Информация о дурке</h1>
-          <h2 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nisi earum iusto qui quis nobis veritatis dignissimos, in totam voluptatem, pariatur incidunt cupiditate quia voluptates.</h2>
+          <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nisi earum iusto qui quis nobis veritatis dignissimos, in totam voluptatem, pariatur incidunt cupiditate quia voluptates.</div>
         </div>
         <div class="col"></div>
       </div>
@@ -221,24 +188,7 @@
     </div>
   </div>
 
-  <div class="footer dark-theme">
-    <div class="container">
-      <div class="footer-block">
-        <div class="footer-item">
-          <a href="https://www.warcraftlogs.com/guild/eu/гордунни/Орден%20рыцарей%20Наару" target="_blank"><img src="images/logs.png" alt="" class="footer-image"></a>
-        </div>
-        <div class="footer-item">
-          <a href="https://raider.io/guilds/eu/gordunni/Орден%20рыцарей%20Наару" target="_blank"><img src="images/rio.png" alt="" class="footer-image"></a>
-        </div>
-        <div class="footer-item">
-          <a href="#" target="_blank"><img src="images/discord.png" alt="" class="footer-image"></a>
-        </div>
-        <div class="footer-item">
-          <a href="https://vk.com/knaaru" target="_blank"><img src="images/vk.png" alt="" class="footer-image"></a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php require_once 'templates/footer.php'?>
 
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
@@ -252,5 +202,6 @@
   <script type="text/javascript" src="vendor/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
   <script type="text/javascript" src="js/info-slider.js"></script>
+  
 </body>
 </html>

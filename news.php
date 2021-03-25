@@ -24,50 +24,17 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 left">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Главная</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">Новости</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Рейды</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Гайды</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Устав</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 right">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Профиль</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Выйти</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+  <?php require_once 'templates/nav.php'?>
 
     <div class="news">
         <div class="container">
 
             <div class="news_block">
                 <div class="news_header">
-                    <a href="post.html"><img src="https:placehold.it/1000x300" alt=""></a>
+                    <a href="post.php"><img src="https:placehold.it/1000x300" alt=""></a>
                 </div>
                 <div class="news_content">
-                    <a class="news_header_link" href="post.html"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
+                    <a class="news_header_link" href="post.php"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis impedit eos placeat ipsam officiis assumenda eius blanditiis dignissimos enim tempora nisi reprehenderit possimus, numquam laboriosam!
                 </div>
                 <div class="news_footer">
@@ -76,16 +43,16 @@
                         <li class="news_list_item">author</li>
                         <li class="news_list_item">category</li>
                     </ul>
-                    <a href="post.html" class="news_read">читать полностью</a>
+                    <a href="post.php" class="news_read">читать полностью</a>
                 </div>
             </div>
 
             <div class="news_block">
                 <div class="news_header">
-                    <a href="post.html"><img src="https:placehold.it/2000x1000" alt=""></a>
+                    <a href="post.php"><img src="https:placehold.it/2000x1000" alt=""></a>
                 </div>
                 <div class="news_content">
-                    <a class="news_header_link" href="post.html"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
+                    <a class="news_header_link" href="post.php"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis impedit eos placeat ipsam officiis assumenda eius blanditiis dignissimos enim tempora nisi reprehenderit possimus, numquam laboriosam!
                 </div>
                 <div class="news_footer">
@@ -94,16 +61,16 @@
                         <li class="news_list_item">author</li>
                         <li class="news_list_item">category</li>
                     </ul>
-                    <a href="post.html" class="news_read">читать полностью</a>
+                    <a href="post.php" class="news_read">читать полностью</a>
                 </div>
             </div>
 
             <div class="news_block">
                 <div class="news_header">
-                    <a href="post.html"><img src="https:placehold.it/500x100" alt=""></a>
+                    <a href="post.php"><img src="https:placehold.it/500x100" alt=""></a>
                 </div>
                 <div class="news_content">
-                    <a class="news_header_link" href="post.html"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
+                    <a class="news_header_link" href="post.php"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis impedit eos placeat ipsam officiis assumenda eius blanditiis dignissimos enim tempora nisi reprehenderit possimus, numquam laboriosam!
                 </div>
                 <div class="news_footer">
@@ -112,13 +79,13 @@
                         <li class="news_list_item">author</li>
                         <li class="news_list_item">category</li>
                     </ul>
-                    <a href="post.html" class="news_read">читать полностью</a>
+                    <a href="post.php" class="news_read">читать полностью</a>
                 </div>
             </div>
 
             <div class="news_block">
                 <div class="news_content">
-                    <a class="news_header_link" href="post.html"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
+                    <a class="news_header_link" href="post.php"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis impedit eos placeat ipsam officiis assumenda eius blanditiis dignissimos enim tempora nisi reprehenderit possimus, numquam laboriosam!
                 </div>
                 <div class="news_footer">
@@ -127,31 +94,14 @@
                         <li class="news_list_item">author</li>
                         <li class="news_list_item">category</li>
                     </ul>
-                    <a href="post.html" class="news_read">читать полностью</a>
+                    <a href="post.php" class="news_read">читать полностью</a>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <div class="footer dark-theme">
-        <div class="container">
-          <div class="footer-block">
-            <div class="footer-item">
-              <a href="https://www.warcraftlogs.com/guild/eu/гордунни/Орден%20рыцарей%20Наару" target="_blank"><img src="images/logs.png" alt="" class="footer-image"></a>
-            </div>
-            <div class="footer-item">
-              <a href="https://raider.io/guilds/eu/gordunni/Орден%20рыцарей%20Наару" target="_blank"><img src="images/rio.png" alt="" class="footer-image"></a>
-            </div>
-            <div class="footer-item">
-              <a href="#" target="_blank"><img src="images/discord.png" alt="" class="footer-image"></a>
-            </div>
-            <div class="footer-item">
-              <a href="https://vk.com/knaaru" target="_blank"><img src="images/vk.png" alt="" class="footer-image"></a>
-            </div>
-          </div>
-        </div>
-    </div>
+    <?php require_once 'templates/footer.php'?>
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

@@ -1,0 +1,22 @@
+.navbar-dark .navbar-nav .nav-link{
+    color: var(--light);
+    text-transform: uppercase;
+}
+
+.navbar-nav{
+    display: flex;
+    font-weight: 700;
+}
+
+.right{
+    right: 0;
+    margin-right: 0px!important;
+}
+
+.nav-item{
+    margin-right: 20px;
+}
+
+.nav-link{
+    font-size: 0.5em;
+}
