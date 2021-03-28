@@ -18,7 +18,7 @@
             <a class="nav-link" href="#">Гайды</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Устав</a>
+            <a class="nav-link" href="rules.php">Устав</a>
           </li>
         </ul>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 right">

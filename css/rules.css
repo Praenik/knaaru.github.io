@@ -1,0 +1,56 @@
+@import url("main.css");
+@import url("nav.css");
+@import url("footer.css");
+
+body{
+    background-color: var(--dark);
+}
+
+/* -- MAIN -- */
+
+.rules{
+    width: 100%;
+    height: auto;
+    background-color: var(--dark);
+    color: var(--dark);
+}
+
+.rules_block{
+    display: block;
+    width: auto;
+    max-width: 1000px;
+
+    overflow: hidden;
+    
+    margin: 50px auto;
+    padding: 20px;
+
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0 ,0, 0, 0.35);
+
+    background-color: var(--black);
+    color: var(--light);
+}
+
+.rules_emblem{
+    width: 500px;
+    margin: 0 auto 50px;
+}
+
+.rules_emblem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rules_header{
+    text-align: center;
+}
+
+.rules_article{
+    margin: 25px auto;
+}
+
+.rules_subtitle{
+    text-align: center;
+}
