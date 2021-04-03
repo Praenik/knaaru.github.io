@@ -2,17 +2,12 @@
 @import url("nav.css");
 @import url("footer.css");
 
-body{
-    background-color: var(--dark);
-}
-
 /* -- MAIN -- */
 
 .news{
     width: 100%;
     height: auto;
-    background-color: var(--dark);
-    color: var(--dark);
+
 }
 
 .news_block{

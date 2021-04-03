@@ -12,12 +12,6 @@
             <a class="nav-link" href="news.php">Новости</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Рейды</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Гайды</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="rules.php">Устав</a>
           </li>
         </ul>

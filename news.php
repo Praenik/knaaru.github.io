@@ -26,7 +26,7 @@
 
             <div class="news_block">
                 <div class="news_header">
-                    <a href="post.php"><img src="https:placehold.it/1000x300" alt=""></a>
+                    <a href="post.php"><img src="https://placehold.it/1000x300" alt=""></a>
                 </div>
                 <div class="news_content">
                     <a class="news_header_link" href="post.php"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
@@ -44,7 +44,7 @@
 
             <div class="news_block">
                 <div class="news_header">
-                    <a href="post.php"><img src="https:placehold.it/2000x1000" alt=""></a>
+                    <a href="post.php"><img src="https://placehold.it/2000x1000" alt=""></a>
                 </div>
                 <div class="news_content">
                     <a class="news_header_link" href="post.php"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>
@@ -62,7 +62,7 @@
 
             <div class="news_block">
                 <div class="news_header">
-                    <a href="post.php"><img src="https:placehold.it/500x100" alt=""></a>
+                    <a href="post.php"><img src="https://placehold.it/500x100" alt=""></a>
                 </div>
                 <div class="news_content">
                     <a class="news_header_link" href="post.php"><h2 class="news_title">Lorem ipsum dolor sit amet</h2></a>

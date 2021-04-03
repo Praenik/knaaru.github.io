@@ -49,8 +49,14 @@ body{
 
 .rules_article{
     margin: 25px auto;
+    font-size: 18px;
 }
 
 .rules_subtitle{
     text-align: center;
+    font-size: 30px;
+}
+
+.rules_list_item ol{
+    margin-left: -12px;
 }

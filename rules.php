@@ -29,8 +29,15 @@
                 <h1 class="rules_header">Устав Ордена рыцарей Наару</h1>
                 <article class="rules_article">
                     <h2 class="rules_subtitle">2. Правила гильдии</h2>
-                    <ol>
-                        <li></li>
+                    <ol class="rules_list">
+                        <li class="rules_list_item">test
+                            <ol class="rules_list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                        </li>
                         <li></li>
                         <li></li>
                         <li></li>
