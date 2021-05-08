@@ -17,10 +17,10 @@
         </ul>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 right">
           <li class="nav-item">
-            <a class="nav-link" href="#">Профиль</a>
+            <a class="nav-link" href="#">Войти</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Выйти</a>
+            <a class="nav-link" href="#">Регистрация</a>
           </li>
         </ul>
       </div>

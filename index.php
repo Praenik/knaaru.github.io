@@ -24,7 +24,11 @@
 
 <body>
 
-  <?php require_once 'templates/nav.php'?>
+  <?php
+    include "php/db_connect.php";
+    $db_table = "gen_news";
+    require_once 'templates/nav.php';
+  ?>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -57,33 +61,21 @@
     <div class="container">
       <div class="news-titles">
         <h1 class="title news-main-title">Новости дурки</h1>
-        <a class="title news-main-title more" href="news.html">Больше дурки</a>
+        <a class="title news-main-title more" href="news.php">Больше дурки</a>
       </div>
       <div class="row">
-          <a class="col col-md-3 news-link" href="#">
-            <div class="news-block">
-              <h1 class="news-title">Lorem ipsum</h1>
-              <h2 class="news-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, placeat.</h2>
-            </div>
+          <?php
+          $query = $db->query("SELECT title, text, id FROM $db_table ORDER BY id DESC LIMIT 4");
+          $news = $query->fetchAll(PDO::FETCH_ASSOC);
+          foreach ($news as $new):
+          ?>
+          <a class="col col-md-3 news-link" href="post.php?id=<?=$new[id]?>">
+              <div class="news-block">
+                  <h1 class="news-title"><?=$new[title];?></h1>
+                  <h2 class="news-subtitle"><?=$new[text];?></h2>
+              </div>
           </a>
-        <a class="col col-md-3 news-link" href="#">
-          <div class="news-block">
-            <h1 class="news-title">Lorem ipsum</h1>
-            <h2 class="news-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, placeat.</h2>
-          </div>
-        </a>
-        <a class="col col-md-3 news-link" href="#">
-          <div class="news-block">
-            <h1 class="news-title">Lorem ipsum</h1>
-            <h2 class="news-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, placeat.</h2>
-          </div>
-        </a>
-        <a class="col col-md-3 news-link" href="#">
-          <div class="news-block">
-            <h1 class="news-title">Lorem ipsum</h1>
-            <h2 class="news-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, placeat.</h2>
-          </div>
-        </a>
+          <? endforeach; ?>
       </div>
     </div>
   </div>

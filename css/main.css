@@ -3,6 +3,7 @@
     --light: #fffcfc;
     --gray: #a0a0a0;
     --light: #fffcfc;
+    --blue: #0d6efd;
 }
 
 *{
@@ -38,4 +39,8 @@ a{
 .light-theme{
     background-color: var(--light);
     color: var(--dark);
+}
+
+.dn{
+    display: none;
 }
