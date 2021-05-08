@@ -30,8 +30,8 @@ $db_table = "gen_news";
 
 $data = array('title' => $title, 'text' => $text, 'date' => $date, 'author' => $author, 'category' => $category);
 
-$query = $db->query("INSERT INTO $db_table (title, text, date, author, category, img) VALUES (:title, :text, :date, :author, :category, 0");
-
+$query = $db->prepare("INSERT INTO $db_table (title, text, date, author, category) VALUES (:title, :text, :date, :author, :category)");
+$result = $query->execute($data);
 require_once 'templates/nav.php'
 ?>
 
