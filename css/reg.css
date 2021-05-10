@@ -1,0 +1,89 @@
+@import url("main.css");
+@import url("nav.css");
+@import url("footer.css");
+
+.reg_block{
+    margin-top: 100px;
+}
+
+.reg_title{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.reg_error_block {
+    font-size: 16px;
+    text-align: center;
+}
+
+.reg_form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.reg_label{
+    font-size: 16px;
+    margin: 10px 0 0px;
+}
+
+.reg_input{
+    height: 50px;
+
+    margin: 5px 0;
+
+    color: var(--light);
+
+    border: none;
+    border-bottom: 1px var(--gray) solid;
+    background-color: transparent;
+
+    transition: border-bottom-color .2s linear;
+}
+
+.reg_input:focus{
+    outline: none;
+    caret-color: var(--light);
+    border-bottom: 1px var(--light) solid;
+}
+
+.reg_error{
+    color: var(--red);
+    font-size: 16px;
+}
+
+.reg_btn{
+    background-color: var(--light);
+    width: 50%;
+
+    border: none;
+    border-radius: 5px;
+
+    margin: 25px auto 0;
+    padding: 5px 10px ;
+
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.reg_btn[disabled=true]{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.reg_footer{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.reg_link{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--blue);
+    margin: 0 10px;
+}

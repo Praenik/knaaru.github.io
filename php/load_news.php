@@ -1,6 +1,6 @@
 <?php
 include "db_connect.php";
-$db_table = "gen_news";
+$db_table = "news";
 $offset_get = $_GET['offset'];
 $offset = (int)$offset_get;
 $query = $db->query("SELECT * FROM $db_table ORDER BY id DESC LIMIT $offset, 4");

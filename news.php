@@ -1,3 +1,4 @@
+<? session_start() ?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -33,9 +34,10 @@
   <?php require_once 'templates/footer.php'?>
 
   <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/info-slider.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/news.js"></script>
 </body>
 </html>
 

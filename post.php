@@ -1,3 +1,4 @@
+<? session_start() ?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -22,7 +23,7 @@
     <?php require_once 'templates/nav.php';
 
     include 'php/db_connect.php';
-    $db_table = 'gen_news';
+    $db_table = 'news';
 
     $id = $_GET['id'];
     ?>
