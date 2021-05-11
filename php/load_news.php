@@ -9,9 +9,9 @@ foreach ($news as $new):
     $date = date("d.m.y", strtotime($new[date]));
     ?>
     <div class="news_block">
-        <? if ($new[img]): ?>
+        <? if ($new[img] != '0'): ?>
             <div class="news_header">
-                <a href="post.php?id=<?=$new[id]?>"><img src="images/news/<?='new-'.$new[id]?>.jpg" alt=""></a>
+                <a href="post.php?id=<?=$new[id]?>"><img src="images/news/<?=$new[img]?>" alt=""></a>
             </div>
         <? endif; ?>
         <div class="news_content">

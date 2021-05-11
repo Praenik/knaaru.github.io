@@ -51,25 +51,27 @@ if(isset($_POST["reg_btn"]) && !empty($_POST["reg_btn"])){
     }
 
     // --- Ищем пользователя ---
-        $result_query_select = $db->query("SELECT * FROM `users` WHERE `email` = '".$email."' AND `password` = '".$password."'");
-        if (!$result_query_select) {
-            $_SESSION["error_messages"] .= "<p class='message_error'>Ошибка запроса на выборке пользователя из БД</p>";
+    $result_query_select = $db->query("SELECT * FROM `users` WHERE `email` = '".$email."' AND `password` = '".$password."'");
+    if (!$result_query_select) {
+        $_SESSION["error_messages"] .= "<p class='message_error'>Ошибка запроса на выборке пользователя из БД</p>";
+        header("HTTP/1.1 301 Moved Permanently");
+        header("Location: ".$address_site."/auth.php");
+        exit();
+    } else {
+        if ($result_query_select->rowCount() == 1) {
+            $_SESSION['email'] = $email;
+            $_SESSION['password'] = $password;
+            $user = $result_query_select->fetch(PDO::FETCH_ASSOC);
+            $_SESSION['role'] = $user['role'];
+            header("HTTP/1.1 301 Moved Permanently");
+            header("Location: ".$address_site."/index.php");
+        } else {
+            $_SESSION["error_messages"] .= "<p class='message_error'>Неправильный логин и/или пароль</p>";
             header("HTTP/1.1 301 Moved Permanently");
             header("Location: ".$address_site."/auth.php");
             exit();
-        } else {
-            if ($result_query_select->rowCount() == 1) {
-                $_SESSION['email'] = $email;
-                $_SESSION['password'] = $password;
-                header("HTTP/1.1 301 Moved Permanently");
-                header("Location: ".$address_site."/index.php");
-            } else {
-                $_SESSION["error_messages"] .= "<p class='message_error'>Неправильный логин и/или пароль</p>";
-                header("HTTP/1.1 301 Moved Permanently");
-                header("Location: ".$address_site."/auth.php");
-                exit();
-            }
         }
+    }
 } else {
     exit("<p><strong>Ошибка!</strong> Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href=".$address_site."> главную страницу </a>.</p>");
 }
