@@ -93,6 +93,12 @@
     object-fit: cover;
 }
 
+.news_video {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+
 .load_news_btn{
     display: block;
 

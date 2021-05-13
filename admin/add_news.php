@@ -18,35 +18,41 @@
     <main class="main">
         <div class="container">
             <h1 class="add_title">Добавить новость</h1>
-            <button class="admin_btn" name="add_btn" type="submit">Добавить новость</button>
             <form class="add_form" action="php/add_script.php" method="post" enctype="multipart/form-data">
-                <div class="form_item">
-                    <label for="title">Заголовок</label>
-                    <input class="form_input" name="title" type="text" required>
-                </div>
-                <div class="form_item">
-                    <label for="text">Текст</label>
-                    <input class="form_input" name="text" type="text" required>
-                </div>
-                <div class="form_item">
-                    <label for="author">Автор</label>
-                    <select class="form_input" name="author" required>
+                <table>
+                <tr class="form_item">
+                    <td class="td_left"><label for="title">Заголовок</label></td>
+                    <td class="td_right"><input class="form_input" name="title" type="text" autocomplete="off" required placeholder="Введите заголовок"></td>
+                </tr>
+                <tr class="form_item">
+                    <td class="td_left"><label for="text">Текст</label></td>
+                    <td class="td_right"><textarea class="form_input" data-autoresize name="text" type="text" required placeholder="Введите текст"></textarea></td>
+                </tr>
+                <tr class="form_item">
+                    <td class="td_left"><label for="author">Автор</label></td>
+                    <td class="td_right"><select class="form_input" name="author" required>
                         <option value="Сейрандра">Сейрандра</option>
                         <option value="Хендис">Хендис</option>
-                    </select>
-                </div>
-                <div class="form_item">
-                    <label for="category">Категория</label>
-                    <select class="form_input" name="category">
+                    </select></td>
+                </tr>
+                <tr class="form_item">
+                    <td class="td_left"><label for="category">Категория</label></td>
+                    <td class="td_right"><select class="form_input" name="category">
                         <option selected disabled>Выберите категорию</option>
                         <option value="рейд">рейд</option>
                         <option value="ачивки">ачивки</option>
-                    </select>
-                </div>
-                <div class="form_item">
-                    <label for="preview">Обложка</label>
-                    <input class="form_input" type="file" name="preview" accept="image/jpeg, image/png">
-                </div>
+                    </select></td>
+                </tr>
+                <tr class="form_item">
+                    <td class="td_left"><label for="preview">Обложка</label></td>
+                    <td class="td_right"><input class="form_input" type="file" name="preview" accept="image/jpeg, image/png"></td>
+                </tr>
+                <tr class="form_item">
+                    <td class="td_left"><label for="text">Видео</label></td>
+                    <td class="td_right"><textarea class="form_input" data-autoresize name="video" type="text" placeholder="Видео"></textarea></td>
+                </tr>
+                </table>
+                <button class="admin_btn" name="add_btn" type="submit">Добавить новость</button>
             </form>
         </div>
     </main>
@@ -56,5 +62,7 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/app.js"></script>
+<script src="../js/textarea.js"></script>
 </body>
 </html>
+

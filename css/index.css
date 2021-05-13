@@ -136,6 +136,8 @@
     margin: 0;
     padding: 0;
 
+    width: 100%;
+
     font-size: 0.5em;
 
     overflow: hidden;
@@ -146,7 +148,7 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     line-clamp: 4;
-    box-orient: vertical;
+    box-orient: vertical
 }
 
 /*-- ACHIEVEMENTS --*/

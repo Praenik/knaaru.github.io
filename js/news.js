@@ -1,7 +1,8 @@
 let offset = 0
 
 function loadNews() {
-    offset += 4
+    offset += 8
+    console.log(offset)
     const xhr = new XMLHttpRequest()
     xhr.open('GET', "php/load_news.php?offset="+offset, true)
     xhr.send()
