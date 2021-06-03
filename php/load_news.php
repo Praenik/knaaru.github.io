@@ -23,6 +23,7 @@ foreach ($news as $new):
                 <li class="news_list_item"><time datetime="2021-12-31"><?=$date;?></time></li>
                 <li class="news_list_item"><?=$new[author];?></li>
                 <? if ($new[category] != null): ?><li class="news_list_item"><?=$new[category];?></li><? endif; ?>
+                <li class="news_list_item">просмотры: <?=$new[views];?></li>
             </ul>
             <a href="post.php?id=<?=$new[id]?>" class="news_read">читать полностью</a>
         </div>

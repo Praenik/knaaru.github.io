@@ -1,4 +1,16 @@
-<? session_start() ?>
+<?php
+session_start();
+$db_table = 'news';
+
+$id = $_GET['id'];
+include 'php/db_connect.php';
+
+if (!isset($_COOKIE['ViewCookie'.$id])) {
+    setcookie("ViewCookie".$id, "viewed", time() + 3600);
+    $view = $db->query("UPDATE $db_table SET views=views+1 WHERE id=$id");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -20,13 +32,7 @@
 
 <body>
 
-    <?php require_once 'templates/nav.php';
-
-    include 'php/db_connect.php';
-    $db_table = 'news';
-
-    $id = $_GET['id'];
-    ?>
+    <? require_once 'templates/nav.php'; ?>
 
     <div class="news">
         <div class="container">
@@ -51,6 +57,7 @@
                         <li class="news_list_item"><time datetime="2021-12-31"><?=$date;?></time></li>
                         <li class="news_list_item"><?=$news[author];?></li>
                         <? if ($news[category] != null): ?><li class="news_list_item"><?=$news[category];?></li><? endif; ?>
+                        <li class="news_list_item">просмотры: <?=$news[views];?></li>
                     </ul>
                 </div>
             </div>

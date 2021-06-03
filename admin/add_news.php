@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/admin.css">
-    <link rel="stylesheet" href="css/add_news.css">
+    <link rel="stylesheet" href="css/news.css">
     <title>Панель управления</title>
 </head>
 <body>
@@ -26,7 +26,13 @@
                 </tr>
                 <tr class="form_item">
                     <td class="td_left"><label for="text">Текст</label></td>
-                    <td class="td_right"><textarea class="form_input" data-autoresize name="text" type="text" required placeholder="Введите текст"></textarea></td>
+                    <td class="td_right">
+                        <div id="toolbar-container"></div>
+                        <div id="editor">
+                            <p>Текст новости</p>
+                        </div>
+                        <textarea class="form_input dn" data-autoresize name="text" required placeholder="Введите текст"></textarea>
+                    </td>
                 </tr>
                 <tr class="form_item">
                     <td class="td_left"><label for="author">Автор</label></td>
@@ -49,11 +55,13 @@
                 </tr>
                 <tr class="form_item">
                     <td class="td_left"><label for="text">Видео</label></td>
-                    <td class="td_right"><textarea class="form_input" data-autoresize name="video" type="text" placeholder="Видео"></textarea></td>
+                    <td class="td_right"><textarea class="form_input" data-autoresize name="video" placeholder="Видео"></textarea></td>
                 </tr>
                 </table>
                 <button class="admin_btn" name="add_btn" type="submit">Добавить новость</button>
             </form>
+
+
         </div>
     </main>
 
@@ -61,7 +69,9 @@
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/decoupled-document/ckeditor.js"></script>
 <script src="js/app.js"></script>
+<script src="js/format_text.js"></script>
 <script src="../js/textarea.js"></script>
 </body>
 </html>

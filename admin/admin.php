@@ -14,7 +14,11 @@
     <? require_once 'templates/header.php' ?>
     <? require_once 'templates/sidebar.php' ?>
 
-    <main class="main">main</main>
+    <main class="main">
+        <div class="container">
+            123
+        </div>
+    </main>
 
     <? require_once 'templates/footer.php' ?>
 

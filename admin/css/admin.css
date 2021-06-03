@@ -1,5 +1,38 @@
 @import url("../../css/main.css");
 
+table {
+    width: 100%;
+}
+
+input[type=text],
+textarea {
+    color: var(--light);
+    font-family: inherit;
+
+    border: none;
+    border-bottom: 1px var(--gray) solid;
+    background-color: transparent;
+    width: 100%;
+
+    transition: border-bottom-color .2s linear;
+}
+
+input[type=text]::placeholder,
+textarea::placeholder {
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    caret-color: var(--light);
+    border-bottom: 1px var(--light) solid;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -27,6 +60,11 @@
     box-shadow: 10px 0 10px rgba(0, 0, 0, .3);
 }
 
+.sidebar>li {
+    float: left;
+    position: relative;
+}
+
 .sidebar_link {
     display: block;
 
@@ -39,11 +77,13 @@
     transition: transform .15s linear;
 }
 
-.sidebar_link:not(.active):hover {
+.sidebar_link:not(.active):hover,
+.sidebar_link_sub:not(.active):hover{
     transform: translateX(20px);
 }
 
-.sidebar_link.active {
+.sidebar_link.active,
+.sidebar_link_sub.active {
     margin-left: 40px;
     text-decoration: underline;
 }

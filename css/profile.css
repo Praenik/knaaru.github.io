@@ -1,0 +1,81 @@
+@import url("main.css");
+@import url("nav.css");
+@import url("footer.css");
+
+input[type=text],
+textarea {
+    color: var(--light);
+    font-family: inherit;
+
+    border: none;
+    border-bottom: 1px var(--gray) solid;
+    background-color: transparent;
+
+    transition: border-bottom-color .2s linear;
+}
+
+input[type=text]::placeholder,
+textarea::placeholder {
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    caret-color: var(--light);
+    border-bottom: 1px var(--light) solid;
+}
+
+.profile_form {
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    font-size: 24px;
+}
+
+.profile_avatar {
+    margin-right: 15px;
+}
+
+.profile_avatar_img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile_avatar_input {
+    font-size: 14px;
+}
+
+.profile_info_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile_info_item>label {
+    margin-right: 25px;
+}
+
+.form_submit {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--light);
+
+    color: var(--dark);
+    font-size: 16px;
+
+    padding: 3px 15px;
+}
+
+.form_submit:focus {
+    background-color: var(--dark-dark);
+    color: var(--light);
+    outline: none;
+}

@@ -17,7 +17,7 @@ if (isset($_POST["add_btn"])) {
         $file_name = $_FILES['preview']['name'];
         move_uploaded_file($_FILES['preview']['tmp_name'], $path . $_FILES['preview']['name']);
         $data = array('title' => $title, 'text' => $text, 'author' => $author, 'category' => $category, 'date' => $date, 'img' => $file_name, 'video' => $video);
-        $query = $db->prepare("INSERT INTO $db_table (title, text, author, category, `date`, img, video) VALUES (:title, :text, :author, :category, :date, :img, :video)");
+        $query = $db->prepare("INSERT INTO $db_table (title, text, author, category, date, img, video) VALUES (:title, :text, :author, :category, :date, :img, :video)");
         $query->execute($data);
     } else {
         $data = array('title' => $title, 'text' => $text, 'author' => $author, 'category' => $category, 'date' => $date, 'video' => $video);
@@ -33,3 +33,4 @@ if (isset($_POST["add_btn"])) {
 } else {
     exit('Выйди и зайди нормально');
 }
+

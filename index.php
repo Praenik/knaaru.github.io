@@ -32,37 +32,37 @@
   ?>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" >
-        <img src="images/main-slider/slider-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-item">
-        <img src="images/main-slider/slider-2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="images/main-slider/slider-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="images/main-slider/slider-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="images/main-slider/slider-3.jpg" class="d-block w-100" alt="...">
+          </div>
       </div>
-      <div class="carousel-item">
-        <img src="images/main-slider/slider-3.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
   </div>
 
   <div class="news light-theme">
     <div class="container">
       <div class="news-titles">
-        <h1 class="title news-main-title">Новости дурки</h1>
-        <a class="title news-main-title more" href="news.php">Больше дурки</a>
+        <h1 class="title news-main-title">Новости</h1>
+        <a class="title news-main-title more" href="news.php">Еще новости</a>
       </div>
       <div class="row">
           <?php
@@ -86,7 +86,7 @@
       <div class="row">
         <div class="col"></div>
         <div class="col-6">
-          <h1 class="title">Информация о дурке</h1>
+          <h1 class="title">Информация</h1>
           <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nisi earum iusto qui quis nobis veritatis dignissimos, in totam voluptatem, pariatur incidunt cupiditate quia voluptates.</div>
         </div>
         <div class="col"></div>
@@ -123,7 +123,7 @@
 
   <div class="achievement light-theme">
     <div class="container">
-      <h1 class="title">Достижения дурки</h1>
+      <h1 class="title">Достижения</h1>
       <div class="row">
         <div class="col-sm">
           <div class="ach-item">
@@ -155,10 +155,10 @@
 
   <div class="timetable dark-theme">
     <div class="container">
-      <h1 class="title">Расписание дурки</h1>
+      <h1 class="title">Расписание</h1>
       <div class="row">
         <div class="col-sm">
-          <h1 class="timetable-static">Дурка статик</h1>
+          <h1 class="timetable-static">Длань наару</h1>
           <h2 class="timetable-raidtime">СР - 18:45-21:30 МСК</h2>
           <h2 class="timetable-raidtime">ПТ - 18:45-21:30 МСК</h2>
           <h2 class="timetable-raidtime">СБ - 18:45-21:30 МСК</h2>
@@ -171,7 +171,7 @@
         </div>
         <div class="col-sm">
           <div class="col-sm">
-            <h1 class="timetable-static">Дурка статик</h1>
+            <h1 class="timetable-static">Гнев наару</h1>
             <h2 class="timetable-raidtime">СР - 19:45-22:00 МСК</h2>
             <h2 class="timetable-raidtime">ПТ - 19:45-22:00 МСК</h2>
             <h2 class="timetable-raidtime">ВС - 19:45-22:00 МСК</h2>
@@ -195,7 +195,7 @@
   <script type="text/javascript" src="vendor/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
   <script type="text/javascript" src="vendor/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
+
   <script type="text/javascript" src="js/info-slider.js"></script>
-  
 </body>
 </html>

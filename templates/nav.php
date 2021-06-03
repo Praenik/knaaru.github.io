@@ -11,9 +11,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="news.php">Новости</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="rules.php">Устав</a>
-              </li>
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" href="rules.php">Устав</a>-->
+<!--              </li>-->
           </ul>
           <? if (!isset($_SESSION['email']) && !isset($_SESSION['password'])): ?>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 right">
@@ -27,14 +27,12 @@
           <? else: ?>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 right">
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-                      Профиль
-                  </a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Профиль</a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <? if ($_SESSION['role'] == 'admin'): ?>
                     <li><a class="dropdown-item" href="admin/admin.php">Панель управления</a></li>
                     <? endif; ?>
-                    <li><a class="dropdown-item" href="#">Настройки</a></li>
+                    <li><a class="dropdown-item" href="profile.php">Личный кабинет</a></li>
                     <li><a class="dropdown-item" href="php/logout.php">Выйти</a></li>
                   </ul>
               </li>
